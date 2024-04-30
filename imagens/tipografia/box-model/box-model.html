@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Model</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            height: 400px;
+            width: 300px;
+            border-width: 10px;
+            border-right: 10px;
+            border-left: 10px;
+            border-top: 10px;
+            border-bottom: 10px;
+            border-style: solid;
+            border-color: lightskyblue;
+
+            padding-top:10px ;
+            padding-right:10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+
+            margin-top:10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            outline-width:5px;
+            outline-style:dashed;
+            outline-color:darkcyan;
+
+        }
+
+        .titulo{
+            color: red;
+            text-align: center;
+        }
+
+        #importante{
+            color: red;
+            text-align: center;
+
+        }
+
+        a{
+            height: 200px;
+            width: 200px;
+            border-style: dashed;
+            color:rgb(192, 36, 36)
+        }
+    </style>
+</head>
+<body>
+    <h1>Box-Model na prática</h1>
+
+    <p>Vamos explorar um pouco do modelo de caixas, o unico modelo que não se encaixa no box-model é o inline-model e <a href="#">Links fazem parte deste modelo</a>.</p>
+
+    <br>
+
+<img src="box-model pratica/exemplo1-caixa.png" alt="">
+
+<p>Como mostrado no exemplo acima, selecionando o h1 podemos ver na ferramenta do desenvolvedor(Para poder acessa-la pressione Cntrl+Shift+I / va nos três pontos no lado superior direito, clique em mais ferramentas e em ferramentas do desenvolvedor) ao lado que o <b>h1</b> possui o <b>height e width</b> mas não possui <b>padding e border</b> e também possui margem.Isso se aplica a qualquer elemento que selecionarmos.</p>
+
+<br>
+
+<h2>Border</h2>
+<img src="box-model pratica/exemplo2-caixa.png" alt="">
+
+<br>
+
+<p>Como mostra a imagem acima, configuramos algumas medidas para mostrar como exemplo(altura, largura da borda do h1) e essa ferramentado dev tools é de uso importante para para podermos encaixar certo como vamos querer que a largura e a posição que nossos elementos vão tomar na nossa página.Para isso basta clicar em cima de qualquer uma das configurações de estilo,  e com a roda do mouse rolar para cima e para baixo para definir o tamanho que o elemento vai ocupar na tela e usando o dev tools não faz alterações no código original, facilitando para o desenvolvedor.</p>
+
+<br>
+
+<h2>Padding</h2>
+<img src="box-model pratica/exmeplo3-caixa.png" alt="padding">
+
+<p>O padding fica responsável pelo preenchimento do espaço interno do border e pode ser alterado dentro de todos os lados assim como o border.</p>
+
+<br>
+
+<h2>Margin</h2>
+
+<img src="box-model pratica/exemplo4-caixa.png" alt="margin">
+
+<p>A margin é responsavel pelo que acontece em volta do caixa que o h1 ocupa, como mostrado na imagem podemos definir configurações para que ela mova a caixa do h1 tanto para a direita, quanto esquerda, baixo e cima, porém precisamos nos atentar a algo muito importante!</p>
+
+<br>
+
+<h3 class="titulo">Importante Lembrar</h3>
+<p id="importante">Não podemos usar essas configurações da  <strong>margin</strong> para centralizar nenhuma caixa,pois suponhamos que o navegador do cliente esteja sendo aberto no celular, pode ser que para ele esteja centralizado porém se ele abrir no Desktop a caixa ja não vai estar mais centralizada, para resolvermos isso vamos ter um pseudo-elementos específico  que é o <b style="text-decoration: underline">margin: auto;</b> que ela vai centralizar nossa caixa horizontalmente de acordo com o tamanho da tela.</p>
+
+<br>
+
+<p>Podemos configurar também o outline da nossa caixa, ele é responsavel pelo tracejamento de uma linha em volta da nossa borda.</p>
+
+<img src="box-model pratica/exemplo5-caixa.png" alt="outline">
+
+<p>O box model é configurado da mesma maneira que o border, configurando somente a largura e o estilo  desenhando uma linha do lado de dentro da margem como mostra a imagem acima.</p>
+</body>
+</html>

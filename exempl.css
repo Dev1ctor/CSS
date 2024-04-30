@@ -1,0 +1,14 @@
+body{
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gato {
+    text-align: center;
+}
+
+.gato > img{
+    width:300px;
+    border-radius: 20px 40px;
+    box-shadow:5px 5px 5px rgb(42, 46, 46);
+}

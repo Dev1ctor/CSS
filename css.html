@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> CSS</title>
+   <link rel="shortcut icon" href="favicons/favicon-css.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+   <h1>Estilização CSS</h1>
+
+   <br>
+
+   <h2> Estilos Inline</h2>
+
+
+   <p>Estilos inline como o próprio nome diz,são estilos no CSS que são feitos na mesma linha do código.Esses tipos de
+      estilos são usaveis mas são os menos recomendados para programadores profissionais,pois são estilos complicados
+      pois você tem que ficar replicando código,ou se caso precisar fazer alteração em mais de um isso pode ser
+      prejudicial,pois vai ter que alterar um de cada vez perdendo assim tempo,e sendo uma coisa chata de se fazer!</p>
+
+   <br>
+
+   <h3>Veja o exemplo:</h3>
+
+   <img src="exemplos/codigo1.png" alt="codigo css inline">
+
+   <br>
+
+   <img src="exemplos/ex1-css.png" alt="exemplo css inline">
+
+   <br>
+
+   <p>Como pode-se ver no código acima,o estilo e aplicado linha por linha,e da para fazer qualquer estilização como
+      mudar cor de fundo,organizar as palavras,centralizar elas,o único problema deste tipo de estilo e que ele é feito
+      linha por linha,o que além de deixar o código bagunçado,deixa ele dificil de mecher se ocorrer alguma mudança por
+      parte de cliente.</p>
+
+   <br>
+
+   <h2>Estilos Internos</h2>
+
+   <p>Estilos internos não são muito diferentes dos estilos inline,a unica diferença é que o estilo em vez de ser
+      aplicado diretamente na linha do código,ele vai ser aplicado internamente no cabeçalho <b>&lt;head&gt;</b> do
+      código.</p>
+
+   <br>
+
+   <h3>Veja o exemplo:</h3>
+
+   <img src="exemplos/codigo3.png" alt="codigo interno">
+
+   <br>
+
+   <img src="exemplos/ex1-css.png " alt="css interno">
+
+   <p>Como se ve no exemplo acima,o código é lançado sobre o cabeçalho do arquivo html,fazendo com que facilite a
+      organização do código evitando demora para encontrar e corrigir possiveis erros ou alterações na página.</p>
+
+
+   <h2>Estilos Externos</h2>
+
+   <p>Estilos externos são aqueles que são feitos separadamente do nosso código,tendo um link de ligação com a nossa
+      página para que os estilos criados são aplicados e esse é a melhor forma de estilização para poder usar,pois da
+      para usar em mais de um site.</p>
+
+   <h3>Veja o exemplo:</h3>
+
+   <img src="exemplos/codigo4.png" alt="codigo externo">
+
+   <br>
+
+   <p>Vendo na imagem acima,você cria uma ligação com um arquivo externo fora do seu html,e dentro desse arquivo você
+      joga os estilos que vão ser aplicados a sua página.</p>
+
+   <img src="exemplos/codigo5.png" alt="css externo">
+
+   <br>
+
+   <h3>Resultando:</h3>
+
+   <br>
+
+   <img src="exemplos/ex1-css.png" alt="exemplo css externo">
+
+   <hr>
+
+   <h1>Cores em CSS</h1>
+
+   <h2>Representando as Cores</h2>
+
+   <p>Um site precisa de cor para poder chamar a atenção de quem visita,e escolher o tipo de cor ou variação de cores
+      que um site vai possuir vai definir se a pessoa vai ficar ou não no seu site por muito tempo,geralmente as pessoas
+      costumam levar cerca de 90 segundos para decidir se vão ficar em um site ou não,e esse é o tempo que voce tem para
+      mostrar para as pessoas o potencial do seu site!
+      <br>
+      Em CSS temos algumas 4 formas para representar as cores,são elas: Nomes, Decimais e Hexadecimais, RGBs e por HSL.
+   </p>
+
+   <br>
+
+   <h3>Nomes</h3>
+
+   <p>A representação são as padrões que costumamos usar em nossos editores de códigos usando a tag
+      <code>&lt;style="background-color:***; color:***;"&gt;</code>, veja o exemplo:
+   </p>
+
+   <br>
+
+   <img src="exemplos/codigo-cores1.png" alt="codigo cores">
+
+   <br>
+
+   <p>Como podemos ver,nesta representação é usada o nome das cores em ingles para poder representar que cor vamos
+      querer em nosso site,é o jeito mais simples e rapido,e como resultado temos o fundo com um azul meio ciano e as
+      letras da cor rosa.</p>
+
+   <img src="exemplos/ex-cores1.png" alt="exemp cores">
+
+   <br>
+
+   <h3>Hexadecimais</h3>
+
+   <p>O código hexadecimal é o código que vai determinar a tonalidade da cor que vamos usar,os códigos hexadecimais são
+      numeros que vão de 0 a 16,porém a numeração é decimal pois os numeros vão de 0 a 9 pois o numero 10 já são dois
+      algarismos juntos então acaba que como os numeros só vão de 0 a 9 é complementado o resto dos que faltam para
+      totalizar 16 com as letras A,B,C,D,E,F.</p>
+
+   <img src="exemplos/codigo-cores2.png" alt="codigo 2">
+
+   <p>Como pode-se observar,o código para definir a tonalidade da cor que usaremos temos uma
+      mistura de numeros e letras chamados estes de hexadecimais.E como resultado temos:
+   </p>
+
+   <img src="exemplos/ex-cores2.png" alt="exeplo-css2">
+
+   <br>
+
+   <h3>RGB</h3>
+
+   <p>A famosa sigla RGB(red, green, blue) também é uma das formas de definirmos
+      a cor que vamos usar em nosso site.
+   </p>
+
+   <img src="exemplos/codigo-cores3.png" alt="codigo3">
+
+   <p>O controle de cores RGBs funciona da seguinte maneira,os numeros que estão dentro do parenteses logo após a sigla
+      RGB siguinificam: presença de vermelho, presença de verde e presença de azul,e assim são de definidas as cores
+      usando o parâmetro RGB. </p>
+
+   <img src="exemplos/ex-cores3.png" alt="exmeplo cores3">
+
+   <br>
+
+   <h3>HSL</h3>
+
+   <p>A representação de cores nas CSS usam de uma ultima forma de adicionarmos cores a um site que é usando
+      caracteristicas de cores através da sigla HSL(Hell Saturation Luminosity)que é representado da seguinte maneira.
+   </p>
+
+   <img src="exemplos/codigo-cores4.png" alt="codigo-css4">
+
+   <p>Como podemos ver na imagem representada acima nos temos <strong>60 de matiz, 100% de saturação e 40% de
+         luminosidade </strong>gerando assim a cor amarela.No outro nós possuimos <strong>100 de matiz, 100% de
+         saturação e 40% de luminosidade </strong>o que nos gera a cor verde. <br>
+      Gerando assim:</p>
+
+   <br>
+
+   <img src="exemplos/ex-cores4.png" alt="exemplo-cores4">
+
+   <hr>
+
+
+   <h1>Harmonia de Cores</h1>
+
+   <h2>Circulo Cromático</h2>
+
+   <div class="container">
+      <img src="imagens/circulo-cromatico.jpg" alt="cromatico">
+      <div class="texto">
+         <h3>Cores Primárias</h3>
+         <p>As cores primárias dentro do circulo cromático são amarelo, vermelho e azul,elas são simetricas formando um
+            triangulo equilatero.</p>
+
+         <h3>Cores Secundárias</h3>
+         <p>As cores secundarias são o laranja o verde e o violeta sendo cores mais escuras,bem complexas de se usar.
+         </p>
+
+         <h3>Cores Terciárias</h3>
+         <p>As cores terciárias são mistura das cores primárias e secundárias e sempre que formos usá-las nos primeiro
+            colocamos o nome das cores primárias e logo após o nome das cores secundárias,formando assim as cores
+            terciarias.E são elas amarelo-esverdeado, amarelo-alaranjado, vermelho-alaranjado, vermelho-arroxeado,
+            azul-arroxeado e por ultimo azul-esverdeado.</p>
+      </div>
+   </div>
+
+   <h3>Temperatura de Cores </h3>
+   <p>Todas as cores que estão entre o roxo escuro e o verde são denominadas cores frias,do amarelo até o roxo claro são
+      denominadas cores quentes.</p>
+
+   <h3>Cores Complementares</h3>
+   <p>As cores complementares são aquelas cores que possuem mais contraste entre si,por exemplo observando o circulo
+      cromático acima se eu quiser como cor primária o violeta geralmente a cor que contrasta com essa cor segundo o
+      circulo cromático sempre é o oposto daquela cor,que observando bem é o amarelo.Se escolhermos como cor primária o
+      azul como exemplo,a cor que contrasta com ele seria o laranja,e por assim segue a linha de raciocinio. </p>
+
+   <h3>Cores Análogas</h3>
+   <p>As cores análogas são cores que não possuem contraste tão grande entre elas,mas são cors perceptiveis,como por
+      exemplo: se eu pego o violeta seguindo o circulo cromático,as cores que são análogas ao violeta vão ser as que
+      estão do lado dele,ou seja são as cores (rosa e roxo),se eu pegar o azul como por exemplo as cores análogas a ele
+      seriam (roxo e ciano). </p>
+
+   <h3>Junção</h3>
+   <p>Podemos também fazer o uso de uma outra técnica que basicamente e juntar as <strong>Cores Análogas</strong> junto
+      com as <strong>Cores Complementares</strong> formando assim uma paleta de 4 cores em nosso site.Como por exemplo
+      se pegarmos em nosso circulo cromático a cor Ciano como principal,vamos pegar as cores (azul e verde) como
+      análogas e vamos traçar uma linha até na cor (Laranja) que é nossa cor complementar.</p>
+
+   <h3>Cores Análogas Relacionadas</h3>
+   <p>As cores análogas relacionadas são cores que vão ser usadas para transformar cores em degradê,para isso
+      escolheremos duas cores em sequência no circulo cormático,em seguida nós pulamos a próxima cor da sequência e
+      pegamos a próxima cor,por exemplo,vamos supor que pegamos a cor amarela em seguida vamos pegar a cor
+      bege,pularemos a cor laranja-clara e pegaremos como próxima cor o laranja-escuro.E isso serve tanto para um lado
+      do circulo como para o outro que segue,amarelo, verde-claro pulamos o verde-escuro e pegamos o cinza como terceira
+      cor. </p>
+
+   <h3>Cores Intercaladas</h3>
+   <p>Cores intercaldas são parecidas com as Cores Análogas Relacionadas só que a diferença é que as Cores Intercaladas
+      possuem um contraste maior entre elas,como por exemplo:Vamos escolher a cor vermelha,em seguida vamos pular a cor
+      rosa e vamos pegar a cor rosa-escuro,logo após vamos pular a cor roxa e vamos pegar a cor azul formando assim uma
+      paleta de cores.E como dito anteriormente,isso serve para qualquer cor do circulo cromático.</p>
+
+   <h4>!Importante!</h4>
+
+   <div class="txt">
+      <p>Por mais que seja possivel usar esta forma de paleta,não é muito recomendada por ser meio dura.Fica a seu
+         critério!</p>
+   </div>
+
+   <p>Existem 3 tipos de cores intercaladas,são elas:</p>
+
+   <h3>Cores Tríadicas</h3>
+   <p></p>Seguindo o circulo cromático as cores triadicas são definidas da seguinte maneira,você escolhe uma cor e logo
+   após pula três cores e pega a quarta cor,e depôs pula três cores novamente pegando a quarta por isso do nome tríadico
+   </p>
+
+   <h3>Cores em Quadrado</h3>
+   <p>Nas cores em quadrado em vez de pularmos três cores no circulo nós vamos pular somente duas cores então pegamos
+      uma cor,pulamos duas e pegamos outra cor e assim segue.</p>
+
+   <h3>Cores Tetrádicas</h3>
+   <p>Para escolher as cores tetradicas fazemos da seguinte maneira nos escolhemos uma cor qualquer no circulo e pegamos
+      o oposto a ela,logo apos escolhemos outra cor e pegamos o oposto dela.</p>
+
+   <h3>Monocromia</h3>
+   <p>Na monocromia nos trabalhamos utilizando somente uma cor e modificamos nessa cor a saturação e a luminosidade para
+      obtermos assim o tom de cor que vamos usar no nosso site,que é chamado também de degradê.</p>
+
+   <br>
+
+   <div class="ferramenta">
+      <h2>Ferramentas</h2>
+   </div>
+
+   <div class="work">
+
+      <img src="imagens/logos/adobe-color.png" style="width:200px; height:185px" alt="logo adobe">
+      <br>
+      <img src="imagens/logos/paletton.webp" style=" width:600px" alt="paletton">
+      <br>
+      <img src="imagens/logos/coolors.png" style="width:260px" alt="coolors">
+
+   </div>
+
+
+   <h2>Degradê com CSS</h2>
+   <p>Para podermos criar um degradê usando CSS nos vamos fazer o uso de uma declaração chamada
+      linear-gradient(configurações que queremos) dentro da tag &lt;background-color&gt;,vamos supor que eu queira um
+      degradê de fundo entre o branco e o azul nós usariamos dentro da nossa tag em especifico:</p>
+
+   <br>
+
+   <img src="exemplos/codigo-degrade.png" alt="codigo degrade">
+   <img src="exemplos/exemp-degrade.png" alt="exemplo degrade">
+
+   <p>Podemos fazer este degradê usando qualquer tipo de cor no nosso site,para facilitar podemo usar qualquer uma
+      dessas ferramentas logo acima do titulo que servem para capitura de cores como por exemplo o instagram,vejamos:
+   </p>
+
+   <img src="exemplos/exemp-ferramentaadobe.png" alt="adobe-colors">
+
+   <p>Usando como ferramenta de capitura de cores o Adobe-Color por exemplo,conseguimos ver quais cores de degradê o
+      instagram usa,e para podermos aplícalas a nosso site basta adicionarmos as configurações das cores em ordem no
+      nosso estilo do site:</p>
+
+   <br>
+
+   <img src="exemplos/codigo-degrade2.png" alt="codigo degrade2">
+   <img src="exemplos/exemp-degrade2.png" alt="degrade2 ">
+
+   <p>Temos algumas maneiras dieferentes de definir como nosso degrade vai ficar mudando alguns parâmetros como por
+      exemplo,em vez de querermos por código de cores podemos usar no lugar de <strong>linear-gradient</strong> vamos
+      trocar por <strong>radial-gradient</strong> que podemos definir por ângulos (20deg),podemos definir por radiais
+      trocando o deg por (circle) isso vai gerar o degrade em forma de circulo no site em vez de baixo para cima ou
+      inverso.</p>
+
+   <h4>Aviso</h4>
+   <div class="aviso">
+      <p>Por mais que seja bonito usar degradê,evite usar este método com mais de 5 cores para manter armônico e evite
+         usar com menos de 3 cores para não ter dificuldades de aplicar! </p>
+   </div>
+
+   <hr>
+   <br>
+
+   <h1>Fontes</h1>
+
+   <h2>Categoria de Fontes</h2>
+   <p>Os tipos de fontes também são classificadas por categorias,sendo elas baseadas principalmente por presença ou
+      ausência de serifas.As outras categorias acabam sendo derivadas das principais ou não se encaixam nas
+      caracteristicas gerando assim novas categorias.</p>
+
+   <br>
+
+   <h3>Fontes Serifadas</h3>
+   <p>Categoria mais classica de fontes,tipicamente os caracteres serifados sempre foram usados em grandes blocos
+      impressos de papel se aproveitando de uma caracteristica da nossa percepção:as pessoas nunca lêem palavras letra
+      por letra e sim por um conjunto.Serifas tem como objetivo guiar nossos olhos graças ao prolongamento que possuem
+      nas letras formando uma linha imaginária.</p>
+
+   <img src="imagens/tipografia/fontes serifadas.png" alt="imagem serif">
+
+   <br>
+
+   <h3>Fontes sem Serifa</h3>
+   <p>Mais conhecidas pelo seu nome Francês <strong>Sans-serif</strong> são fontes que não apresentam serifa.São ótimas
+      para exibição em telas/monitores transmitindo uma sensação de limpeza e organização.
+
+      <img src="imagens/tipografia/fontes sans serif.png " alt="imagem san-serif">
+
+      <br>
+
+   <h3>Fontes Monoespaçadas</h3>
+   <p>Este tipo de fonte é uma derivação das fontes (Serif-Sans Serif) existindo assim fontes mono espaçadas com e sem
+      serifas.Tendo como diferença o espaço horizontal(Largura) que é ocupada por cada letra,dando a fonte mono espaçada
+      o mesmo tamano para todas as letras em si.É uma boa opção de fonte para textos muito grandes que exija muito do
+      leitor deixando a leitura mais leve.</p>
+
+   <img src="imagens/tipografia/fontes mono-espaçadas.png  " alt="imagem monospace">
+
+   <br>
+
+   <h3>Fontes Script</h3>
+   <p>Chamadas de <strong>Handwriting</strong> são fontes que tentam imitar a escrita humana,seu uso deve ser controlado
+      e não deve ser usada em textos muito longos,pois causam cansaço visual tornando-se dificil de ler.</p>
+
+   <img src="imagens/tipografia/fontes script.png" alt="imagem script ">
+
+   <br>
+
+   <h3>Fontes Display</h3>
+   <p>Fontes display são todas as fontes que fogem das classificações citadas acima,são fontes que possuem bastante
+      efeitos visuais,enfeitadas e até mesmo curiosas e são chamadas também de fontes comemorativas.</p>
+
+   <img src="imagens/tipografia/fontes display.png" alt="imagem display">
+
+   <br>
+
+   <h3>Praticando...</h3>
+   <p>Para poder aplicarmos na prática o uso das fontes nós iremos no arquivo css style e vamos aplicar as seguintes
+      configurações.</p>
+
+   <img src="imagens/tipografia/código-letras.png" alt="codigo tipografia">
+
+   <br>
+
+   <h3>Gerando como resultado:</h3>
+
+   <br>
+
+   <img src="imagens/tipografia/exemp-letras.png" alt=" imagem exemplo ">
+
+   <hr>
+   <br>
+
+   <h2>Tamanho de Fontes</h2>
+   <p>Em tamanho de fontes existem várias medidas que podem ser aplicadas como as medidas absolutas que são em
+      cm(centímetros), in(polegadas), pt(pontos), pc(paicas), px(pixels)...etc.Para tamanhos que vão ser exibidos em
+      telas é recomendado pelo W3C o uso do px ou em.</p>
+   <p>E temos também as medidas relativas que são em(medida relativa ao tamanho da fonte), ex(medida relativa a altura
+      de x), rem(medida relativa ao root), vw(largura view-port/tamanho da tela), vh(altura da view-port). </p>
+
+   <br>
+
+   <div class="importante">
+      <h4>Importante</h4>
+      <div class="regras">
+         <b>
+            <p>É importante destacar que a recomendação de uso do W3C é de px(pixels) ou em(medida relativa ao tamanho
+               da fonte),não use as demais pois são usadas para medidas impressas!</p>
+         </b>
+      </div>
+   </div>
+
+   <br>
+
+   <h3>Veja:</h3>
+
+   <img src="imagens/tipografia/tam-fonte.png" alt="tamanho fonte">
+   <img src="imagens/tipografia/ex-font.png" style="width: 900px;" alt="">
+
+   <p>O tamanho padrão das fontes dos navegadores são <b>16px</b> como vemos na imagem a cima,outra medida que pode ser
+      usada é com <b>em</b> que é a medida relativa ao tamanho da fonte.Porém <b>1em</b> equivale exatamente a 16px,que
+      é o tamanho das fontes,esta medida é a melhor para se trabalhar pois ela é mais facil de calcular dando para
+      trabalhar com números reais.</p>
+
+   <img src="imagens/tipografia/tam2-fonte.png" alt="font EM">
+
+   <br>
+
+   <img src="imagens/tipografia/ex2-font.png" alt="ex2 font">
+
+   <br>
+
+   <p>Como explicado que 1em equivale a 16 pixels,então 2em equivalem a 32 pixels e observando a imagem acima podemos
+      ver que o tamanho da fonte esta maior,justamente por estar usando e medida relativa ao tamanho da fonte. </p>
+
+   <h3>Peso das Fontes</h3>
+   <p>O peso da fonte tem a ver com a espessura que a fonte vai ter,se ela vai ser mais magrinha ou mais gordinha, e
+      para poder usar essas fontes não podemos fazer o uso somente das fontes padrões como Arial, Georgia, Courier New,
+      etc...Para podermos adicionar peso a uma fonte vamos usar o parâmetro <b>work-sans</b> junto com a fonte que vamos
+      querer usar,e após adicionarmos esse parâmetro nos iremos adicionar a declaração
+      <strong>font-weight:****;</strong>(peso da fonte).Existem alguns pesos literais para serem usados no weight como
+      (<b>lighter, normal, bold e bolder</b>).
+   </p>
+
+   <h3>lighter</h3>
+   <p>O lighter é o peso de fonte mais leve.</p>
+
+   <img src="imagens/tipografia/font-lighter.png" alt="img-cd lighter">
+   <img src="imagens/tipografia/ex-lighter.png" alt="img-ex lighter">
+   <br>
+
+   <h3>Normal</h3>
+   <p>O normal é a fonte normal usada aonde se mantém na mesma largura.</p>
+
+   <img src="imagens/tipografia/font-normal.pn;g" alt="img-cd normal">
+   <img src="imagens/tipografia/ex-normal.png" alt="img-ex normal">
+   <br>
+
+   <h3>Bold</h3>
+   <p>O bold é uma fonte mais negrita um pouco mais cheia do que a normal.</p>
+
+   <img src="imagens/tipografia/font-bold.png" alt="img-cd bold">
+   <img src="imagens/tipografia/ex-bold.png" alt="img-ex bold">
+   <br>
+
+   <h3>Bolder</h3>
+   <p>Ja o bolder é o mais negito de todos mais cheio do que o bold.</p>
+
+   <img src="imagens/tipografia/font-bolder.png" alt="img-cd bolder">
+   <img src="imagens/tipografia/ex-bolder.png" alt="img-ex bolder">
+   <br>
+
+   <p>Nessas variações de lighter a Bolder é possivel variar usando númerações de 100 a 900, sendo 100 lighter e 900 o
+      bolder e entre essas temos variações como um lighter mais escuro antes de chenar no normal um normal mais escuro
+      antes de chegar no bold e por ai vai,se analisar é até melhor usar as numerações para definir o peso da fonte em
+      vez de as váriaveis.Porém nem todas as fontes possuem essas variações,pesquise bem antes de usar.</p>
+
+   <h3>Shorthand Fonte</h3>
+   <p>O Shorthend fonte é o uso de declarações em uma só linha sem que afete o conteúdo.Vamos supor que definimos para
+      um &lt;h1&gt;&lt;<b style="text-decoration:underline;">font-family: 'work sans , sans serif; font-weight: bolder;
+         font-size: 3em; font-style: italic; </b> /h1&gt;,em código ficaria da seguinte maneira:</p>
+
+   <br>
+
+   <img src="imagens/tipografia/shorthend-font.png" alt="img-cd shorthend">
+   <img src="imagens/tipografia/ex-shorthend.png" alt="img-ex shorthend">
+   <br>
+
+   <p>Usando o método Shorthend fonte nós vamos definir todas essas declarações acima em uma só linha de uma forma que
+      não afete o conteúdo,veja:</p>
+
+   <img src="imagens/tipografia/font-shorthand.png" alt="font shorthand">
+   <img src="imagens/tipografia/img-ex fontshorthand.png" alt="exemplo shorthand">
+   <br>
+
+   <p>Este método pode ser usado em qualquer tag definindo a propriedade como <b>font</b> e aplicando as declarações
+      dentro dela,porém para usar esta font é preciso seguir uma ordem de procedência,caso contrário não funcionará.</p>
+
+   <br>
+
+   <div class="shorthand">
+      <img src="imagens/tipografia/orden shorthand.png" alt="img-ordem shorthand">
+
+   </div>
+
+
+   <h2>Fontes Externas</h2>
+
+   <h3>Google Fonts</h3>
+   <p>Para usarmos outros tipos de fontes sem ser as padrões do navegador nos vamos precisar buscar fontes
+      externamente,para isso vamos usar o google fonts sem precisar instalar nenhuna fonte em nosso computador. <br>
+      Para isto basta você acessar <b>www.fonts.google.com</b>,e acessando terão algumas áreas muito úteis:</p>
+
+   <img src="imagens/tipografia/google-fonts.png" alt="ex-google fonts">
+
+   <img src="imagens/tipografia/resumo google fonts.png" alt="passo a passo">
+
+   <br>
+
+   <p>Ao clicar no ícone superior ao lado direito, uma aba lateral <b>selected family</b> aparecerá.</p>
+
+   <br>
+   <img src="imagens/tipografia/google-fonts2.png" alt="ex-google fonts2">
+
+   <br>
+
+
+   <p>Primeiro clique em <b>Embed</b> logo em seguida em <b>@import</b> para poder acessar os códigos que serão
+      implantados no arquivo CSS.O código de cima sera colocado na primeira linha das declarações, ja o segundo
+      especificado em <b>css rules</b> vai ser colocado dentro da propriedade <code>font-family:;</code> na declaração
+      de todo seletor onde vamos querer aplicar a fonte.</p>
+
+   <img src="imagens/tipografia/google-fonts3.png" alt="google fonts3">
+
+   <br>
+
+   <h3>Outras Fontes</h3>
+
+   <img src="imagens/tipografia/site-fonts.png" alt="dafont site">
+
+   <p>Este método aqui é usado para casos aonde o seu cliente queira uma fonte que esteja por fora do google fonts ou
+      seja uma fonte que não tenha,ai se o cliente não tiver uma fonte pronta para que você use,esta é uma das formas
+      que você pode usar para procurar outros tipos de fontes para colocar no seu site. <br>
+      Para isso vamos fazer o uso de um outro site o <a href="https://www.dafont.com/pt/">www.dafont.com</a> e nele vai
+      ter varios tipos de fonte de diferentes formas,desenhos, personalizadas,etc...E você vai buscar a fonte do seu
+      interesse.</p>
+
+   <br>
+
+   <br>
+
+   <img src="imagens/tipografia/img-dafont.png" alt=" exemplo dafont">
+
+   <br>
+
+   <p>Com nossa fonte escolhida nós vamos fazer o download dos arquivos da fonte que vamo usar para poder adicionarmos
+      ela ao nosso css.Com os arquivos baixados extraia os arquivos,e recorte eles para a pasta principal do código.Com
+      tudo extraido agora é só implementarmos os arquivos ao nosso código,vejamos:</p>
+
+   <img src="imagens/tipografia/arquivos-zip.png   " alt="arquivos extração">
+
+   <br>
+   <p>Com as pastas extraidas foram gerados tipos de arquivos de fonte,como podemos ver na imagem abaixo temos dois
+      tipos de arquivos format(otf/ttf).Existem cinco tipos de format que podem ser usados,são eles
+      <b>Opentype(otf)</b>, <b>truetype(ttf)</b>, <b>embed-opentype</b> </b>, <b>truetype-att(Apple Advanced
+         Typohraphy)</b> e por ultimo temos o <b>svg</b>.
+   </p>
+
+   <br>
+
+   <img src="imagens/tipografia/arquivos-zip2.png" alt="arquivosextração 2">
+
+   <p>Agora que sabemos os tipos de arquivos e como colocálos em nossa pasta,vamos aprender a adicionalos a nossa página
+      web,para isso vamos seguir uns passos bem simples.Primeiro vamos no nosso editor de código e vamos pegar a
+      estilização do nosso conteúdo, em seguida vamos adicionar uma configuração simples para podermos implementar a
+      configuração da fonte no nosso site:</p>
+
+
+   <img src="imagens/tipografia/codigo-fonte.png" alt=" codigo dafont">
+
+   <br>
+
+   <p>O <b>@font-face</b> determina o espaço aonde vamos configurar nossa fonte, o <b>font-family</b> que ele determina
+      serve para darmos o nome que vamos usar em nossa fonte, o <b>scr: url('')</b> determina o caminho aonde esta o
+      nosso arquivo de fonte que no caso são aqueles arquivos que extraimos e jogamos em nossa pasta principal, o
+      <b>format:('')</b> é o que determina o tipo de arquivo que ele é para o navegador,para ver se é compativel.E temos
+      como resultado:
+   </p>
+
+   <img src="imagens/tipografia/resultado-fonte.png" alt="fonte personalizada">
+
+   <br>
+
+   <p>E podemos usar esta configuração para para poder usar quaisquer tipos de fontes em nosso site,assim o cliente pode
+      escolher que tipo de fonte ele vai querer usar e você não vai ter problemas com isso.</p>
+
+
+   <h3>Exemplos:</h3>
+
+   <img src="imagens/tipografia/font-amor.png" alt="exeplo dafont">
+
+   <img src="imagens/tipografia/font-natal.png  " alt="exemplo2 dafont">
+
+   <br>
+
+   <img src="imagens/tipografia/cartoon font.png" alt="">
+   <img src="imagens/tipografia/exagered-dafont.png " alt=" fonte exagerada">
+
+   <br>
+
+   <p>É importante tomar cuidado somente se as fontes usadas possuem acentuação,pois algumas fonte não possuem e isso é
+      muito ruim pois a maioria das palavras possuem acentuações! </p>
+
+   <br>
+
+   <h2>Capitura de Fontes</h2>
+
+   <br>
+
+   <h3>Coletando fontes de Sites:</h3>
+   <p>Para podermos fazer a capitura de fontes externas de outros sites, nós vamos fazer o uso de uma extensão do
+      próprio chrome usando o site <a href="https://chromewebstore.google.com">www.chromewebstore.google.com</a> e
+      adicionar a extensão chamada <b>Fonts Ninja</b>.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/fonts-ninja.png " alt="fonts Ninja">
+   <img src="imagens/tipografia/addfonts-ninja.png " alt="fonts ninja2">
+
+   <p>Com a extensão adicionada ao seu chrome, para poder usá-la basta acessar sua página de interesse na web e clicar
+      na ferramenta em cima da página que ela vai começar a analisar os tipos de fontes que o seu site de interesse está
+      usando.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/inform-ninja.png" alt="inform ninja">
+
+   <p>Clicando na logozinha do ninja marcado logo acima, e batando passar o mouse sobre as fontes do site
+      automaticamente ja carrega as configurações de cada fonte, quais fontes estão sendo usadas e a cor que esta sendo
+      usada nas fontes, e você pode fazer isso em qualquer site caso goste de alguma fonte ou queira somente saber os
+      tamanhos para poder aplicar posteriormente no seu site.</p>
+
+   <br>
+
+   <h3>Coletando Fotnes de Imagens:</h3>
+   <p>Para finalizar a parte de fontes iremos ver agora três sites que podemos usar para capitura de fontes através de
+      imagens.</p>
+
+   <h3>WhatFontis</h3>
+
+   <img src="imagens/tipografia/fonts-in-image.png" alt="whatfontis">
+
+   <br>
+
+   <p>O whatfontis é um site bem simples aonde você ja com sua imagem instalada no seu computador,basicamente você
+      arrasta a imagem para o quadrado verde mostrado na imagem acima e faz as configurações da forma que você vai
+      querer que sua fonte seja pesquisada.Esse é o melhor site para capitura de fontes dentro de imagens,só tem um
+      porém nem todas as fontes são gratuitas.</p>
+
+   <h3>Font Squirrel</h3>
+
+   <img src="imagens/tipografia/fonts-in-image2.png" alt=" fonts squirrel ">
+   <img src="imagens/tipografia/fonts-in-image2-2.png" alt="fonts squirrel2">
+
+   <br>
+
+   <p>O fontsquirrel é um outro site de captura de fonts em imagens bem simples só com algumas diferenças do
+      whatfontis,nesse aqui nos precisamos clicar em <b>font indentifier</b> para podermos ir para a área principal do
+      nosso interesse que é aonde vamos carrgar nossa imagem para capitura de fontes e como o whatfontis é so
+      configurarmos a fonte da forma que quisermos para poder usar no nosso site.</p>
+
+   <h3>My Fonts</h3>
+
+   <img src="imagens/tipografia/fonts-in-image3.png" alt="My fonts">
+
+   <br>
+
+   <p>E por ultimo temos os <b>My Fonts</b> seguindo o mesmo padrão do fontSquirrel aonde você clica em (whatTheFont) e
+      clica em adicionar arquivo de imagem para poder pegar as fontes do seu interesse!</p>
+
+   <br>
+
+   <div class="importante">
+      <h4>!Aviso Iportante!</h4>
+      <div class="aviso">
+         <p>É importante manter seu cliente ciente de que nem todas as fontes tiradas desses sites são gratuitas,a
+            maioria costuma ser paga e caso ele concorde em usar aidicione o valor ao seu valor na hora da cobrança!</p>
+      </div>
+   </div>
+
+   <br>
+
+   <h2>Alinhamento de Textos</h2>
+
+   <p>No CSS nós temos três tipos de alinhamentos de texto,para isso vamos fazer o uso do text-align:left;<b>(texto a
+         esquerda)</b> temos o text-align:right;<b>( texto a direita)</b> e temos o text-align:center;<b>(texto no
+         centro)</b> mas temos mais uma forma de configurar o texto,caso queiramos ajustar para que o texto fique com um
+      espaçamento e alinhado nas bordas fazemos o uso do text-align:jusfty;<b>(alinha o texto nas laterais)</b>.</p>
+
+   <h3>Na prática...</h3>
+
+   <img src="imagens/tipografia/código-alinhamento.png" alt="código alinhamento">
+
+   <br>
+
+   <p>Como pode-se ver adicionamos o <b>text-align:left;</b> no corpo, o <b>text-align:center;</b> no titulo principal,
+      o<b> text-align:right;</b> no subtitulo e no parágrafo adicionamos o <b>text-align:left;</b>, aquele
+      <b>text-indent:20px;</b> que está junto ao texto é para dar um espaçamento inicial no parágrafo.
+   </p>
+
+   <br>
+
+   <img src="imagens/tipografia/alinhamento.png" alt="exemplo alinhamento">
+
+   <hr>
+   <br>
+
+   <h1>Seletores Personalizados</h1>
+
+   <br>
+
+   <h2>ID:</h2>
+   <p>Para podermos nos aprofundar mais nas CSS vamos começar a dar um pouco mais depoder dentro do nosso código
+      aprendendo a usar seletores personalizados,que são em <b>HTML(id)</b> e no <b>CSS(#)</b>.Com esses seletores
+      podemos indentificar um determinado elemento com um <b>(id)</b> podendo dar a ele configurações especiais que as
+      outras tags iguais não recebem.</p>
+
+   <h3>Veja o exemplo:</h3>
+
+   <br>
+
+   <img src="imagens/tipografia/seletores/codigo-seletores.png" alt="codigo1-seletores">
+   <img src="imagens/tipografia/seletores/exemp-seletores.png" alt="exemp1-seletores">
+
+   <p>Como podemos ver no código acima, definimos uma cor para o body e uma cor para os h1,só que como podemos ver as
+      cores dos h1 se misturam por serem iguais e para mudarmos isso precisamos definir especificamente o que vamos
+      querer mudar como por exemplo podemos deixar o titulo principal centralizado e os demais com umacor um pouco mais
+      escura para poder dar uma diferenciada na página,e é ai que entra o seletor <b>id</b> no HTML e o <b>#</b> no
+      CSS,veja: </p>
+
+   <br>
+
+   <img src="imagens/tipografia/Seletores/codigo2-seletores.png" alt="codigo principal">
+   <img src="imagens/tipografia/Seletores/codigo2-2-seletores.png" alt="codigo2 seletores">
+
+   <p>Como explicado nos precisamos definir um id='nome' dentro do HTML,e aplicamos no css para poder definirmos a
+      configuração específica,sendo assim dentro do css fizemos o uso do <b>(#)principal</b> para definirmos a
+      configuração do titulo e usamos <b>(#)secundarios</b> para configuração dos demais titulos.Gerando como resultado
+      na nossa página:</p>
+
+   <br>
+
+   <img src="imagens/tipografia/Seletores/exemp2-seletores.png" alt="exemp2-seletores">
+
+
+   <div class="importante">
+      <h4>!Importante!</h4>
+      <div class="aviso">
+         <p>É de extrema importancia prestar atenção que não é porquê funciona que esta correto,tem uma regra criada
+            pela W3C que diz que em um documento HTML só pode existir um <b>(id)</b>, ou seja a forma descrita acima por
+            mais que seja funcional,esta incorreta!Uma forma de definir configurações para diferentes tags é usando a
+            declaração <b>(class="")</b> que vai ser explicada no conteúdo a seguir!</p>
+      </div>
+   </div>
+
+   <br>
+
+   <h2>Class:</h2>
+
+   <p>Como dito no aviso acima,por mais que uma declaração funcione não significa que esteja certa e para resolvermos
+      isso vamos aprender a fazer o uso das classes<b>(class='')</b>.Diferente do <b>(id="")</b> que é único, uma classe
+      pode ser múltipla ou seja ela pode ser aplicada de maneiras infinitas em um código e para ser aplicada nos
+      definimos a <b>(class='')</b> na tag HTML que vamos definir a configuração, e no usamos o <b>(.)</b> para poder
+      implementar ela no css,veja:</p>
+
+
+   <img src="imagens/tipografia/seletores/código3-seletores.png" alt="codigo3-seletores">
+   <img src="imagens/tipografia/seletores/codigo3-3-seletores.png" alt="codigo3.3-seletores">
+
+   <p>Feitas as alterações no documento HTML aonde redefinimos os <b>ids</b> errados que tinhamos colocado pelas
+      <b>class=""</b> e mantemos o nome comosecundários,aonde aplicamos as mesmas configurações de cores dentro do CSS e
+      mudamos a <b>(#)</b> pelo <b>(.)</b> que é o atributo que define que é uma classe dentro do documento HTML.Gerando
+      como resultado:
+   </p>
+
+   <br>
+
+   <img src="imagens/tipografia/Seletores/exemp2-seletores.png" alt="exemp2-seletores">
+
+   <br>
+
+   <h2>Pseudo Classes</h2>
+
+   <p>Pseudo-Classes é uma palavra-chave adicionada a declarações de um seletor após um sinal de dois pontos que
+      especificam um estado especial que o elemento pode ter,e existem várias pseudo-classes para estilos,e são elas:
+   </p>
+
+   <h3>Hover</h3>
+   <img src="imagens/tipografia/seletores/codigo-classes.png" alt="pseudo-classes">
+
+   <p>Para podermos aplicar o uso dessas pseudo-classes vamos precisar criar um exemplo aonde vamos adicionar um
+      <b>id=''</b>a uma div e vamos definir uma configuração de estado para essa div.Veja:
+   </p>
+
+   <img src="imagens/tipografia/Seletores/codigo-pc.png" alt="hover">
+
+   <br>
+
+   <p>Definimos aqui um h1 e um h2 e uma div com um h3 e um texto,e vamos definir a configuração no css usando a
+      pseudo-classe <b>hover</b> para definirmos a ação de quando o mouse passar por cima da escrita dentro da div,ira
+      ter a ação de mostrar um texto escondido na página.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/Seletores/codigo2-pc.png" alt="">
+
+
+   <p>O caractere especial <b>></b> apontando para o <b>p</b> mostra que o texto é um seletor filho da div e a
+      configuração dentro dele com <b>display: none; </b> da a ordem de que não quer que aquele texto seja mostrado.Como
+      ja vimos uma pseudo-classe é ativada a partir do uso dos dois pontos e logo em seguida vem a ação que vamos
+      definir para uma tag,no caso do <b>hover</b> ele dá a ação para que seu estilo possa ser alterado através da ação
+      do usuário, no caso o texto que esta como seletor filho dentro da div, configuramos usando o <b>display:block;</b>
+      que define para o texto ser visivel e a cor que ira mostrar quando o cursor passar sobre a escrita,e como
+      resultado.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/Seletores/exemp-pc.png" alt="exemp hover">
+
+   <p>Passando o mouse por cima do <b>clique aqui</b> temos a resposta de mostrar um texto escondido.</p>
+
+   <img src="imagens/tipografia/Seletores/exemp2-pc.png" alt="exemp2-hover">
+
+   <p>outras pseudo-classes...</p>
+
+   <h3>Visited</h3>
+   <p>A pseudo-classe <b>Visited</b> normalmente mostra links que ja foram visitados ficando roxo.Definimos três links
+      para podermos usar de exmeplo.</p>
+
+   <img src="imagens/tipografia/seletores/codigo-pc2.png" alt="visited">
+
+   <img src="imagens/tipografia/seletores/codigo2-2pc.png" alt="visited">
+
+   <p>Definimos para a pseudo-classe visited a cor vermelha ou seja se ela estiver vermelha são os links que foram
+      visitados pela pessoa.</p>
+
+   <img src="imagens/tipografia/seletores/negrito.png" alt="visited">
+
+   <br>
+
+   <h3>Active</h3>
+   <p>A pseudo-classe active define a cor que o link vai ter quando o mouse clicar por sobre ele.</p>
+
+   <img src="imagens/tipografia/seletores/codigo3-pc.png" alt="active">
+   <img src="imagens/tipografia/seletores/exemp3-3pc.png" alt="exemp active">
+
+   <h2>Pseudo Elementos</h2>
+   <p>Se as pseudo-classes são definidas por <b>(:)</b> os <strong>pseudo-elementos</strong> são definidos por
+      <b>(::)</b>, e tem como função adicionar coisas diretamente no conteúdo HTML sem fazer nenhuma alteração no
+      documento.
+   </p>
+
+   <img src="imagens/tipografia/seletores/codigo4-pc.png" alt="::after">
+   <img src="imagens/tipografia/seletores/exemp4-pc.png" alt="exemp ::after">
+
+   <p>Ou seja o código acima define que depôs do conteudo que são os links,mostre no site que o que esta sendo
+      apresentado são links,essa é a função do pseudo-elemento <b>::after</b>.</p>
+
+   <hr>
+   <br>
+
+   <h1>Modelo de Caixas</h1>
+
+   <p>De forma objetiva,baseado no conceito chamado <strong>"box model"</strong>, a maioria dos elementos que possuimos
+      em um documento HTML são como caixas sendo conteiners que armazenam conteúdos ou até mesmo outras caixas.</p>
+
+   <br>
+
+   <h2>Anatomia</h2>
+   <p>A anatomia é dividida por alguns seletores de configuração,são eles:</p>
+
+   <br>
+
+   <h3>height&width</h3>
+   <p>Esses são seletores de de tamanho para uma tag,sendo o <b>height</b> o que determina a altura que uma tag ou
+      elemento vai possuir sendo ele(imagem, texto, video, etc...).Ja o <b>width</b> determina a largura que uma
+      determinada tag ou elemento vai possuir, seguindo os mesmos padrões do height.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/height&width.png" alt="height-width">
+
+   <h3>Border(borda)</h3>
+   <p>A borda é a linha que circunda o conteúdo e define uma borda em volta de um elemento.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/border.png" alt="borda">
+
+
+   <h3>Padding</h3>
+   <p>O <b>padding</b> faz parte do border só que em vez de somente circundar o espaço que a borda gera, ele faz o
+      acolchoamento dentro dessa borda aumentando o tamanho que a borda possui internamente e pode ser calculado de
+      qualquer de qualquer área da borda.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/padding.png" alt="padding">
+
+   <h3>Margin</h3>
+   <p>Como o padding é um acolchocamento interno dentro da borda nós possuimos também um acolchoamento externo pelo lado
+      de fora da borda chamado de <b>margin</b>.A margem como dita controla o tamanho externo por fora da borda.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/margin.png" alt="margin">
+
+   <h3>outline</h3>
+   <p>O outline pode ser considerado como um tracejado pelo lado de fora da borda ou pode ser visto como contorno sendo
+      do lado de fora da borda.</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/outline.png" alt="outline">
+
+   <br>
+
+   <h2>Tipos de Caixa</h2>
+
+   <h3>box-Level</h3>
+   <p>Elementos do tipo box-level sempre se inicia em uma nova linha e ocupa a largura total do elemento que esta
+      contido,caso não esteja dentro de nenhum elemento ele ocupará 100% da largura do body.Uma tag que pode ser usada
+      de exemplo para o modelo box-level é a tag <b>&lt;div&gt;</b>.</p>
+
+   <h3>Inline-Level</h3>
+   <p>Ja o modelo inline-level não quebra a linha e continua no ponto aonde foram definidos,e a largura ocupa só o
+      tamanho relativo ao seu conteúdo.Uma tag de exemplo para o modelo inline-level é a tag <b>&lt;span&gt;</b>.</p>
+
+   <h3>Outros exemplos...</h3>
+
+   <img src="imagens/tipografia/box-model/elements.png" alt="elementos caixa">
+
+   <br>
+
+   <h3>Box-Model na Prática...</h3>
+   <p>Para acessar mais conhecimento sobre o estilo box-model acesse <a
+         href="imagens/tipografia/box-model/box-model.html" target="_blank">"Trabalhando com caixas"</a> e aproveite os
+      estudos.</p>
+
+   <hr>
+
+
+   <h2>Grouping Tags</h2>
+   <p>Nas linguagens HTML mais antigas possuiam por padrão duas tags de agrupamento genérico <b>"&lt;div&gt;"</b> e
+      <b>"&lt;span&gt;"</b>;.Possuem como diferença que a tag div é do tipo block-level e a span é do tipo inline
+      level,tirando isso no todo resto elas tem o mesmo objetivo juntar vários elementos HTML. <br>
+      Com o surgimento do novo HTML5 surgiram as chamadas tags semânticas de agrupamento, isso não significa que as tags
+      citadas acima ficaram obsoletas, porém foram criadas tags apra fazer a divisão dessas partes no nosso documento
+      HTML.
+   </p>
+
+   <br>
+
+   <h3>Header</h3>
+   <p>Não confundam o <b>header</b> com o <b>head</b> pois o head é a configuração de cabeça do seu site, e o header é o
+      cabeçalho do nosso conteúdo.O header cria áreas relativas a cabeçalhos podendo tanto ser o cabeçalho principal
+      quanto o cabeçalho de uma seção ou artigo.</p>
+
+   <br>
+
+   <h3>nav</h3>
+   <p>O nav vai definir a área de links de navegação pela estrutura de páginas que vão compor seu site,podendo estar
+      dentro de um <b>header</b>.</p>
+
+   <br>
+
+   <h3>Main</h3>
+   <p>o <b>main</b> é um delimitador usado para separar o conteúdo principal do site, geralmente se concentra nas
+      seções,artigos e conteúdos periféricos.</p>
+
+   <br>
+
+   <h3>Section</h3>
+   <p>A <b>section</b> pode conter o conteúdo diertamente no corpo ou fazer a divisão dos conteúdos em artigos com
+      conteúdos específicos, que segundo o <b>W3C</b> uma seção nada mais é do que o agrupamento temático de conteúdos
+      tipicamente com um cabeçalho.</p>
+
+   <br>
+
+   <h3>Article</h3>
+   <p>O artigo é o conteúdo que vai ser lido de forma independente no site costumando dizer respeito a um respectivo
+      assunto, podendo ser usado para delimitar um post de um blog ou fórum, notícia, etc...</p>
+
+   <br>
+
+   <h3>Aside</h3>
+   <p>O <b>aside</b> determina o conteúdo periférico e complementar relacionado ao conteúdo principal de um artigo ou
+      seção, geralmente fica ao lado de um determinado texto ou até mesmo no meio dele.</p>
+
+   <br>
+
+   <h3>Footer</h3>
+   <p>O <b>footer</b> é reponsável por criar o rodapé para o site inteiro,é o conteúdo que não faz parte diretamente do
+      conteúdo principal nem do conteúdo periférico,mas possui informações sobre autoria do conteúdo como links
+      adicionais, mapa do site e documentos relacionados.</p>
+
+   <br>
+
+   <h3>Estrutura do Grupo de tags Semânticas:</h3>
+
+   <img src="imagens/Groups tags/estruturas groups.png" alt="estrutura">
+   <img src="imagens/tipografia/box-model/box-model pratica/diagrama Grouping-Tags.png" alt="diagrama estrutura">
+
+   <p>Agora vamos ver uma página montada usando a estrutura <b>Grouping Tags</b> diretamente no HTML.</p>
+
+   <img src="imagens/tests/page-grouping Tags.png" alt="pagina montada">
+
+   <h2>Sombras nas Caixas</h2>
+   <p>Sombras são uteis para dar a sensação de que as caixas estão ali e podem ser usadas em qualquer tipo de caixa, e
+      para adiciona-las nos vamos usar a declaração <b>"box-shadow:"</b>vejamos um exemplo:</p>
+
+   <br>
+
+   <img src="imagens/tipografia/box-model/codigo sombras.png" alt="codigo shadow">
+   <img src="imagens/tipografia/box-model/result sombras.png" alt="result shadow">
+
+   <p>Como pode-se ver o uso do <b>"Box-shadow"</b> usando 3px para a direita e esquerda e 2 px de transparência com a
+      cor branca de fundo,o recomendado como sombra e sempre a cor preta pois não existe sombra clara por que sombra não
+      é nada mais nada menos do que o resultado de ausência de luz no ambiente,então é bom evitar!No caso eu coloquei
+      como exemplo para dar melhor contraste, sendo esta uma maneira aonde você pode manualmente mudar qualquer uma das
+      três configurações do box-shadow.</p>
+
+   <br>
+
+   <section class="bordas">
+      <h2>Bordas</h2>
+      <p>As caixas não precisam por padrão sempre ter formas retângulares, podemos personaliza-las para que possuam
+         diferentes formas, para isso vamos fazer o uso do <b>border-radius.</b></p>
+      <br>
+
+      <img src="exemplos/codigo-bordas.png" alt="codigo bordas">
+      <p>como exemplo então adicionamos aqui no html nossa imagem e definimos uma <b>class="gato"</b> para ficar mais
+         facil de configurar no nosso CSS.</p>
+
+      <br>
+
+      <img src="exemplos/config.bordas.png" alt="config.Bordas">
+      <p>Indo para nossas configurações da imagem dentro do CSS nos definimos o tamanho da imagem para melhor resolução
+         e usarmos o <b>border-radius: 40px</b> para ter uma boa visualização de como funciona na prática.</p>
+      <br>
+
+      <img src="exemplos/exemp-bordas.png" alt="exemp bordas">
+      <p>O <b>border-radius</b> vai definir o raio da borda,ou seja,a curvatura que esse borda vai ter.No caso eu
+         coloquei uma curvatura bem exagerada para melhor visualização resultando no formato da foto do nosso amiguinho
+         gato logo acima!Porém tem como configurar tanto o formato geral da imagem quanto individual,e para fazer isso
+         basta definir uma configuraçao especifica para cada borda específica,veja:</p>
+
+      <br>
+
+      <img src="exemplos/codigo2-bordas.png" alt="">
+      <p>Aqui definimos duas configurações diferentes para o <b>border-radius</b>,uma de 20px e uma de 40px. </p>
+      <br>
+
+      <img src="exemplos/exemp2-bordas.png" alt="">
+      <p>Como mostra a imagem acima,a primeira coniguração de 20px definiu para a borda superior e inferior esquerda e
+         direita marcada de verde,enquanto a de 40px configurou a borda superior e inferior direita e esquerda marcadas
+         de laranja.</p>
+
+      <br>
+
+      <h3>Sombras nas Bordas</h3>
+      <p>Podemos adicionar sombras nas bordas de imagens também, para isso vamos usar o parâmetro <b>box-shadow</b>,
+         veja o exemplo abaixo.</p>
+
+      <img src="exemplos/codigo-shadow.png" alt="codigo sombras">
+      <p>Usando o <b>box-shadow</b> definimos quantos pixel de cada lafo vamos querer que a sombra ocupe e a cor que
+         vamos querer da sombra,formando assim a nossa sombra como mostra a imagem abaixo.</p>
+      <br>
+
+      <img src="exemplos/exemp-shadow.png" alt="exemp sombras">
+
+      <br>
+
+
+
+
+   </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
