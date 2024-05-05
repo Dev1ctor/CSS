@@ -1,8 +1,25 @@
 @charset "UTF-8";
+
 body{
-    background-color:whitesmoke;
-    color:black;
+    background-color:#1d1d20;
+    color:#F7F7FA;
+    font-weight: bold;
 }
+
+
+.style > h2, h3{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.style > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.1em;
+}
+
 
 h1{
     font-size:40px;
